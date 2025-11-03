@@ -92,6 +92,18 @@ const ProductSchema = new mongoose.Schema<IProduct>(
       type: Boolean,
       default: true,
     },
+    campaigns: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Campaign',
+      },
+    ],
+    offers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Offer',
+      },
+    ],
     reviews: [ReviewSchema],
     faq: [FAQSchema],
     variants: [VariantSchema],

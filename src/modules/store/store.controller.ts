@@ -33,7 +33,7 @@ export const getStoreById = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Store fetched successfully',
-      payload: { store },
+      payload: { data: store },
     });
   },
 );
@@ -46,7 +46,7 @@ export const createStore = asyncHandler(
     return successResponse(res, {
       statusCode: 201,
       message: 'Store created successfully',
-      payload: { store },
+      payload: { data: store },
     });
   },
 );
@@ -60,7 +60,7 @@ export const updateStore = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Store updated successfully',
-      payload: { store },
+      payload: { data: store },
     });
   },
 );
@@ -74,7 +74,7 @@ export const updateStoreStatus = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Store status updated successfully',
-      payload: { store },
+      payload: { data: store },
     });
   },
 );
@@ -87,7 +87,7 @@ export const deleteStore = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Store deleted successfully',
-      payload: { store },
+      payload: { data: store },
     });
   },
 );

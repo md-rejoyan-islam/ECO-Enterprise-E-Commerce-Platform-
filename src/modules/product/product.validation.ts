@@ -194,6 +194,20 @@ export const getProductsQuerySchema = z.object({
       .transform((val) =>
         val === 'true' ? true : val === 'false' ? false : undefined,
       ),
+    includeCampaigns: z
+      .enum(['true', 'false'], {
+        error: () => {
+          throw new Error('includeCampaigns must be true or false');
+        },
+      })
+      .optional(),
+    includeOffers: z
+      .enum(['true', 'false'], {
+        error: () => {
+          throw new Error('includeOffers must be true or false');
+        },
+      })
+      .optional(),
     page: z.coerce.number().int().positive().default(1).optional(),
     limit: z.coerce.number().int().positive().max(100).default(10).optional(),
     sortBy: z.string().optional(),
@@ -204,6 +218,20 @@ export const getProductsQuerySchema = z.object({
 export const getProductByIdSchema = z.object({
   params: z.object({ id: z.string().min(1) }),
   query: z.object({
+    includeCampaigns: z
+      .enum(['true', 'false'], {
+        error: () => {
+          throw new Error('includeCampaigns must be true or false');
+        },
+      })
+      .optional(),
+    includeOffers: z
+      .enum(['true', 'false'], {
+        error: () => {
+          throw new Error('includeOffers must be true or false');
+        },
+      })
+      .optional(),
     fields: z
       .string()
       .optional()
@@ -225,4 +253,41 @@ export const getProductByIdSchema = z.object({
   }),
 });
 
+// Link campaigns schema
+export const linkCampaignsSchema = z.object({
+  params: z.object({ id: z.string().min(1) }),
+  body: z.object({
+    campaigns: z
+      .array(z.string().min(1))
+      .min(1, 'At least one campaign ID is required'),
+  }),
+});
+
+// Unlink campaign schema
+export const unlinkCampaignSchema = z.object({
+  params: z.object({
+    id: z.string().min(1),
+    campaignId: z.string().min(1),
+  }),
+});
+
+// Link offers schema
+export const linkOffersSchema = z.object({
+  params: z.object({ id: z.string().min(1) }),
+  body: z.object({
+    offers: z
+      .array(z.string().min(1))
+      .min(1, 'At least one offer ID is required'),
+  }),
+});
+
+// Unlink offer schema
+export const unlinkOfferSchema = z.object({
+  params: z.object({
+    id: z.string().min(1),
+    offerId: z.string().min(1),
+  }),
+});
+
 export type GetProductsQuery = z.infer<typeof getProductsQuerySchema>['query'];
+export type GetProductByIdQuery = z.infer<typeof getProductByIdSchema>['query'];

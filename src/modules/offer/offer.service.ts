@@ -6,6 +6,7 @@ import {
   setCache,
 } from '../../utils/cache';
 import { isValidMongoId } from '../../utils/is-valid-mongo-id';
+import ProductModel from '../product/product.model';
 import OfferModel from './offer.model';
 import { IOffer } from './offer.types';
 import {
@@ -188,6 +189,17 @@ export class OfferService {
   static async create(data: CreateOfferBody) {
     const offer = await OfferModel.create(data);
 
+    // Link offer to products if product IDs are provided
+    if (data.applicable_products && data.applicable_products.length > 0) {
+      await ProductModel.updateMany(
+        { _id: { $in: data.applicable_products } },
+        { $addToSet: { offers: offer._id } },
+      );
+
+      // Invalidate product cache
+      await deleteCache('products:list:*');
+    }
+
     // Invalidate cache
     await deleteCache(generateCacheKey({ resource: OFFER_RESOURCE }));
 
@@ -199,12 +211,51 @@ export class OfferService {
       throw createError.BadRequest('Invalid offer ID');
     }
 
+    // Get old offer to compare product IDs
+    const oldOffer = await OfferModel.findById(id);
+    if (!oldOffer) {
+      throw createError.NotFound('Offer not found');
+    }
+
     const offer = await OfferModel.findByIdAndUpdate(id, data, {
       new: true,
     }).lean();
 
-    if (!offer) {
-      throw createError.NotFound('Offer not found');
+    // Handle product linking updates if applicable_products changed
+    if (data.applicable_products) {
+      const oldProductIds = oldOffer.applicable_products || [];
+      const newProductIds = data.applicable_products;
+
+      // Find products to unlink (in old but not in new)
+      const productsToUnlink = oldProductIds.filter(
+        (pid) => !newProductIds.includes(pid),
+      );
+
+      // Find products to link (in new but not in old)
+      const productsToLink = newProductIds.filter(
+        (pid) => !oldProductIds.includes(pid),
+      );
+
+      // Unlink offer from removed products
+      if (productsToUnlink.length > 0) {
+        await ProductModel.updateMany(
+          { _id: { $in: productsToUnlink } },
+          { $pull: { offers: id } },
+        );
+      }
+
+      // Link offer to new products
+      if (productsToLink.length > 0) {
+        await ProductModel.updateMany(
+          { _id: { $in: productsToLink } },
+          { $addToSet: { offers: id } },
+        );
+      }
+
+      // Invalidate product cache if any changes
+      if (productsToUnlink.length > 0 || productsToLink.length > 0) {
+        await deleteCache('products:list:*');
+      }
     }
 
     // Invalidate cache
@@ -225,11 +276,27 @@ export class OfferService {
       throw createError.BadRequest('Invalid offer ID');
     }
 
-    const offer = await OfferModel.findByIdAndDelete(id).select('_id').lean();
+    const offer = await OfferModel.findById(id).select(
+      '_id applicable_products',
+    );
 
     if (!offer) {
       throw createError.NotFound('Offer not found');
     }
+
+    // Unlink offer from all associated products
+    if (offer.applicable_products && offer.applicable_products.length > 0) {
+      await ProductModel.updateMany(
+        { _id: { $in: offer.applicable_products } },
+        { $pull: { offers: id } },
+      );
+
+      // Invalidate product cache
+      await deleteCache('products:list:*');
+    }
+
+    // Delete the offer
+    await OfferModel.findByIdAndDelete(id);
 
     // Invalidate cache
     await deleteCache(

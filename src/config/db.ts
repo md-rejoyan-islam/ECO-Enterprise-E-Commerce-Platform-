@@ -12,6 +12,7 @@ export const connectDB = async (): Promise<void> => {
       },
     );
   } catch (error) {
+    await mongoose.disconnect();
     logger.error(error);
     logger.critical('Database connection failed', {
       error,

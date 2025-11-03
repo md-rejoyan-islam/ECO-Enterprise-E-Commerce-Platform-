@@ -14,7 +14,7 @@ export const getCart = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Cart fetched successfully',
-      payload: { cart },
+      payload: { data: cart },
     });
   },
 );
@@ -28,7 +28,7 @@ export const addItem = asyncHandler(
     return successResponse(res, {
       statusCode: 201,
       message: 'Item added to cart successfully',
-      payload: { cart },
+      payload: { data: cart },
     });
   },
 );
@@ -43,7 +43,7 @@ export const updateItem = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Cart item updated successfully',
-      payload: { cart },
+      payload: { data: cart },
     });
   },
 );
@@ -57,7 +57,7 @@ export const removeItem = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Item removed from cart successfully',
-      payload: { cart },
+      payload: { data: cart },
     });
   },
 );
@@ -96,7 +96,7 @@ export const getUserCart = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'User cart fetched successfully',
-      payload: { cart },
+      payload: { data: cart },
     });
   },
 );

@@ -5,11 +5,11 @@ import { BrandService } from './brand.service';
 import { GetBrandByIdQuery, GetBrandsQuery } from './brand.validation';
 
 export const getBrands = asyncHandler(async (req: Request, res: Response) => {
-  const data = await BrandService.list(req.query as GetBrandsQuery);
+  const result = await BrandService.list(req.query as GetBrandsQuery);
   successResponse(res, {
     statusCode: 200,
     message: 'Brands fetched',
-    payload: data,
+    payload: { data: result.brands, pagination: result.pagination },
   });
 });
 
@@ -20,7 +20,7 @@ export const getBrandById = asyncHandler(
     successResponse(res, {
       statusCode: 200,
       message: 'Brand fetched',
-      payload: data,
+      payload: { data },
     });
   },
 );
@@ -30,7 +30,7 @@ export const createBrand = asyncHandler(async (req: Request, res: Response) => {
   successResponse(res, {
     statusCode: 201,
     message: 'Brand created',
-    payload: data,
+    payload: { data },
   });
 });
 
@@ -39,7 +39,7 @@ export const updateBrand = asyncHandler(async (req: Request, res: Response) => {
   successResponse(res, {
     statusCode: 200,
     message: 'Brand updated',
-    payload: data,
+    payload: { data },
   });
 });
 
@@ -52,7 +52,7 @@ export const changeBrandStatus = asyncHandler(
     successResponse(res, {
       statusCode: 200,
       message: 'Brand status updated',
-      payload: data,
+      payload: { data },
     });
   },
 );
@@ -62,6 +62,6 @@ export const deleteBrand = asyncHandler(async (req: Request, res: Response) => {
   successResponse(res, {
     statusCode: 200,
     message: 'Brand deleted',
-    payload: data,
+    payload: { data },
   });
 });

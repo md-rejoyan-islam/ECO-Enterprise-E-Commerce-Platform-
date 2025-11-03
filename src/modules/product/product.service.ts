@@ -34,6 +34,8 @@ export class ProductService {
       fields,
       featured,
       is_active,
+      includeCampaigns,
+      includeOffers,
       page = 1,
       limit = 10,
       sortBy = 'name',
@@ -89,6 +91,22 @@ export class ProductService {
       .skip(skip)
       .limit(limit);
 
+    // Populate campaigns if requested
+    if (includeCampaigns === 'true') {
+      productQuery.populate(
+        'campaigns',
+        'name description discount_type discount_value start_date end_date is_active',
+      );
+    }
+
+    // Populate offers if requested
+    if (includeOffers === 'true') {
+      productQuery.populate(
+        'offers',
+        'name description discount_type discount_value start_date end_date is_active',
+      );
+    }
+
     if (selectFields) {
       productQuery.select(selectFields);
     }
@@ -99,7 +117,7 @@ export class ProductService {
     ]);
 
     const result = {
-      products,
+      data: products,
       pagination: {
         items: total,
         page,
@@ -113,14 +131,19 @@ export class ProductService {
   }
 
   // Get product by ID
-  static async getById(id: string, fields?: string) {
+  static async getById(
+    id: string,
+    fields?: string,
+    includeCampaigns?: string,
+    includeOffers?: string,
+  ) {
     if (!isValidMongoId(id)) {
       throw new Error('Invalid product ID');
     }
 
     const cacheKey = generateCacheKey({
       resource: 'product',
-      query: { id, fields },
+      query: { id, fields, includeCampaigns, includeOffers },
     });
     const cached = await getCache(cacheKey);
     if (cached) return cached;
@@ -142,6 +165,22 @@ export class ProductService {
       .populate('category', 'name slug')
       .populate('brand', 'name slug')
       .populate('reviews.user', 'first_name last_name');
+
+    // Populate campaigns if requested
+    if (includeCampaigns === 'true') {
+      productQuery.populate(
+        'campaigns',
+        'name description discount_type discount_value start_date end_date is_active',
+      );
+    }
+
+    // Populate offers if requested
+    if (includeOffers === 'true') {
+      productQuery.populate(
+        'offers',
+        'name description discount_type discount_value start_date end_date is_active',
+      );
+    }
 
     if (selectFields) {
       productQuery.select(selectFields);
@@ -597,6 +636,120 @@ export class ProductService {
 
     if (!product) {
       throw new Error('Product or variant not found');
+    }
+
+    // Clear related caches
+    await deleteCache('products:list:*');
+    await deleteCache(`product:${id}`);
+
+    return product;
+  }
+
+  // Link campaigns to product
+  static async linkCampaigns(id: string, campaignIds: string[]) {
+    if (!isValidMongoId(id)) {
+      throw new Error('Invalid product ID');
+    }
+
+    // Validate all campaign IDs
+    for (const campaignId of campaignIds) {
+      if (!isValidMongoId(campaignId)) {
+        throw new Error(`Invalid campaign ID: ${campaignId}`);
+      }
+    }
+
+    const product = await ProductModel.findByIdAndUpdate(
+      id,
+      { $addToSet: { campaigns: { $each: campaignIds } } },
+      { new: true, runValidators: true },
+    );
+
+    if (!product) {
+      throw new Error('Product not found');
+    }
+
+    // Clear related caches
+    await deleteCache('products:list:*');
+    await deleteCache(`product:${id}`);
+
+    return product;
+  }
+
+  // Unlink campaign from product
+  static async unlinkCampaign(id: string, campaignId: string) {
+    if (!isValidMongoId(id)) {
+      throw new Error('Invalid product ID');
+    }
+
+    if (!isValidMongoId(campaignId)) {
+      throw new Error('Invalid campaign ID');
+    }
+
+    const product = await ProductModel.findByIdAndUpdate(
+      id,
+      { $pull: { campaigns: campaignId } },
+      { new: true, runValidators: true },
+    );
+
+    if (!product) {
+      throw new Error('Product not found');
+    }
+
+    // Clear related caches
+    await deleteCache('products:list:*');
+    await deleteCache(`product:${id}`);
+
+    return product;
+  }
+
+  // Link offers to product
+  static async linkOffers(id: string, offerIds: string[]) {
+    if (!isValidMongoId(id)) {
+      throw new Error('Invalid product ID');
+    }
+
+    // Validate all offer IDs
+    for (const offerId of offerIds) {
+      if (!isValidMongoId(offerId)) {
+        throw new Error(`Invalid offer ID: ${offerId}`);
+      }
+    }
+
+    const product = await ProductModel.findByIdAndUpdate(
+      id,
+      { $addToSet: { offers: { $each: offerIds } } },
+      { new: true, runValidators: true },
+    );
+
+    if (!product) {
+      throw new Error('Product not found');
+    }
+
+    // Clear related caches
+    await deleteCache('products:list:*');
+    await deleteCache(`product:${id}`);
+
+    return product;
+  }
+
+  // Unlink offer from product
+  static async unlinkOffer(id: string, offerId: string) {
+    if (!isValidMongoId(id)) {
+      throw new Error('Invalid product ID');
+    }
+
+    if (!isValidMongoId(offerId)) {
+      throw new Error('Invalid offer ID');
+    }
+
+    const product = await ProductModel.findByIdAndUpdate(
+      id,
+      { $pull: { offers: offerId } },
+      { new: true, runValidators: true },
+    );
+
+    if (!product) {
+      throw new Error('Product not found');
     }
 
     // Clear related caches

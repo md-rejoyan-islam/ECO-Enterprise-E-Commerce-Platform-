@@ -13,6 +13,8 @@
 | slug        | string   | Product slug (unique, URL-friendly) |
 | featured    | boolean  | Is product featured                 |
 | is_active   | boolean  | Product active status               |
+| campaigns   | array    | Array of campaign IDs (reference)   |
+| offers      | array    | Array of offer IDs (reference)      |
 | created_at  | datetime | Product creation timestamp          |
 | updated_at  | datetime | Last update timestamp               |
 | reviews     | array    | Array of review objects             |
@@ -62,7 +64,7 @@
 | ------ | ------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------- | ---------------- |
 | GET    | /products?search&category&brand&fields&sortBy&sortOrder&page&limit | List all products with optional search, filter, sorting, pagination | Public        | Redis cache      |
 | POST   | /products                                                          | Create a new product                                                | Admin only    | Invalidate cache |
-| GET    | /products/{id}?fields                                              | Retrieve a specific product                                         | Public        | Redis cache      |
+| GET    | /products/{id}?fields&includeCampaigns&includeOffers               | Retrieve a specific product with optional campaign/offer details    | Public        | Redis cache      |
 | PUT    | /products/{id}                                                     | Update a specific product                                           | Admin only    | Invalidate cache |
 | PATCH  | /products/{id}/status                                              | Change a product's active status                                    | Admin only    | Invalidate cache |
 | DELETE | /products/{id}                                                     | Delete a specific product                                           | Admin only    | Invalidate cache |
@@ -76,3 +78,13 @@
 | PUT    | /products/{id}/faq/{faqId}                                         | Update a FAQ                                                        | Admin only    | Invalidate cache |
 | DELETE | /products/{id}/faq/{faqId}                                         | Delete a FAQ                                                        | Admin only    | Invalidate cache |
 | PATCH  | /products/{id}/inventory                                           | Update product inventory                                            | Admin only    | Invalidate cache |
+| POST   | /products/{id}/campaigns                                           | Link campaigns to a product                                         | Admin only    | Invalidate cache |
+| DELETE | /products/{id}/campaigns/{campaignId}                              | Unlink a campaign from a product                                    | Admin only    | Invalidate cache |
+| POST   | /products/{id}/offers                                              | Link offers to a product                                            | Admin only    | Invalidate cache |
+| DELETE | /products/{id}/offers/{offerId}                                    | Unlink an offer from a product                                      | Admin only    | Invalidate cache |
+
+## Notes
+
+- Products can be associated with multiple campaigns and offers
+- When fetching a product, use `includeCampaigns=true` and `includeOffers=true` to populate campaign and offer details
+- Campaigns and offers should be active and within their date ranges to be applicable

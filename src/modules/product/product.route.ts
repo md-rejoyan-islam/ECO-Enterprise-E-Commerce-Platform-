@@ -11,6 +11,10 @@ import {
   createProductSchema,
   getProductByIdSchema,
   getProductsQuerySchema,
+  linkCampaignsSchema,
+  linkOffersSchema,
+  unlinkCampaignSchema,
+  unlinkOfferSchema,
   updateFAQSchema,
   updateInventorySchema,
   updateProductSchema,
@@ -140,6 +144,40 @@ router.patch(
   authorize(['admin', 'superadmin']),
   validate(updateInventorySchema),
   ProductController.updateInventory,
+);
+
+// Admin routes - Campaign management
+router.post(
+  '/:id/campaigns',
+  isLoggedIn,
+  authorize(['admin', 'superadmin']),
+  validate(linkCampaignsSchema),
+  ProductController.linkCampaigns,
+);
+
+router.delete(
+  '/:id/campaigns/:campaignId',
+  isLoggedIn,
+  authorize(['admin', 'superadmin']),
+  validate(unlinkCampaignSchema),
+  ProductController.unlinkCampaign,
+);
+
+// Admin routes - Offer management
+router.post(
+  '/:id/offers',
+  isLoggedIn,
+  authorize(['admin', 'superadmin']),
+  validate(linkOffersSchema),
+  ProductController.linkOffers,
+);
+
+router.delete(
+  '/:id/offers/:offerId',
+  isLoggedIn,
+  authorize(['admin', 'superadmin']),
+  validate(unlinkOfferSchema),
+  ProductController.unlinkOffer,
 );
 
 export default router;

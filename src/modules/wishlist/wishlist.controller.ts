@@ -19,7 +19,7 @@ export const getWishlist = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Wishlist fetched successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );
@@ -34,7 +34,7 @@ export const addItem = asyncHandler(
     return successResponse(res, {
       statusCode: 201,
       message: 'Item added to wishlist successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );
@@ -50,7 +50,7 @@ export const getItem = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Wishlist item fetched successfully',
-      payload: { item },
+      payload: { data: item },
     });
   },
 );
@@ -65,7 +65,7 @@ export const removeItem = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Item removed from wishlist successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );
@@ -79,7 +79,7 @@ export const clearWishlist = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'Wishlist cleared successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );
@@ -108,7 +108,7 @@ export const getUserWishlist = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'User wishlist fetched successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );
@@ -122,7 +122,7 @@ export const clearUserWishlist = asyncHandler(
     return successResponse(res, {
       statusCode: 200,
       message: 'User wishlist cleared successfully',
-      payload: { wishlist },
+      payload: { data: wishlist },
     });
   },
 );

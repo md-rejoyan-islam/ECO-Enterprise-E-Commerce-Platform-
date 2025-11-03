@@ -6,6 +6,7 @@ import {
   setCache,
 } from '../../utils/cache';
 import { isValidMongoId } from '../../utils/is-valid-mongo-id';
+import ProductModel from '../product/product.model';
 import CampaignModel from './campaign.model';
 import { ICampaign } from './campaign.types';
 import {
@@ -188,6 +189,20 @@ export class CampaignService {
   static async create(data: CreateCampaignBody) {
     const campaign = await CampaignModel.create(data);
 
+    // Link campaign to products if product IDs are provided
+    if (
+      data.applies_to?.productsIds &&
+      data.applies_to.productsIds.length > 0
+    ) {
+      await ProductModel.updateMany(
+        { _id: { $in: data.applies_to.productsIds } },
+        { $addToSet: { campaigns: campaign._id } },
+      );
+
+      // Invalidate product cache
+      await deleteCache('products:list:*');
+    }
+
     // Invalidate cache
     await deleteCache(generateCacheKey({ resource: CAMPAIGN_RESOURCE }));
 
@@ -199,12 +214,51 @@ export class CampaignService {
       throw createError.BadRequest('Invalid campaign ID');
     }
 
+    // Get old campaign to compare product IDs
+    const oldCampaign = await CampaignModel.findById(id);
+    if (!oldCampaign) {
+      throw createError.NotFound('Campaign not found');
+    }
+
     const campaign = await CampaignModel.findByIdAndUpdate(id, data, {
       new: true,
     }).lean();
 
-    if (!campaign) {
-      throw createError.NotFound('Campaign not found');
+    // Handle product linking updates if productsIds changed
+    if (data.applies_to?.productsIds) {
+      const oldProductIds = oldCampaign.applies_to?.productsIds || [];
+      const newProductIds = data.applies_to.productsIds;
+
+      // Find products to unlink (in old but not in new)
+      const productsToUnlink = oldProductIds.filter(
+        (pid) => !newProductIds.includes(pid),
+      );
+
+      // Find products to link (in new but not in old)
+      const productsToLink = newProductIds.filter(
+        (pid) => !oldProductIds.includes(pid),
+      );
+
+      // Unlink campaign from removed products
+      if (productsToUnlink.length > 0) {
+        await ProductModel.updateMany(
+          { _id: { $in: productsToUnlink } },
+          { $pull: { campaigns: id } },
+        );
+      }
+
+      // Link campaign to new products
+      if (productsToLink.length > 0) {
+        await ProductModel.updateMany(
+          { _id: { $in: productsToLink } },
+          { $addToSet: { campaigns: id } },
+        );
+      }
+
+      // Invalidate product cache if any changes
+      if (productsToUnlink.length > 0 || productsToLink.length > 0) {
+        await deleteCache('products:list:*');
+      }
     }
 
     // Invalidate cache
@@ -225,13 +279,30 @@ export class CampaignService {
       throw createError.BadRequest('Invalid campaign ID');
     }
 
-    const campaign = await CampaignModel.findByIdAndDelete(id)
-      .select('_id')
-      .lean();
+    const campaign = await CampaignModel.findById(id).select(
+      '_id applies_to.productsIds',
+    );
 
     if (!campaign) {
       throw createError.NotFound('Campaign not found');
     }
+
+    // Unlink campaign from all associated products
+    if (
+      campaign.applies_to?.productsIds &&
+      campaign.applies_to.productsIds.length > 0
+    ) {
+      await ProductModel.updateMany(
+        { _id: { $in: campaign.applies_to.productsIds } },
+        { $pull: { campaigns: id } },
+      );
+
+      // Invalidate product cache
+      await deleteCache('products:list:*');
+    }
+
+    // Delete the campaign
+    await CampaignModel.findByIdAndDelete(id);
 
     // Invalidate cache
     await deleteCache(

@@ -37,6 +37,8 @@ export interface IProduct {
   slug: string;
   featured?: boolean;
   is_active?: boolean;
+  campaigns?: mongoose.Types.ObjectId[];
+  offers?: mongoose.Types.ObjectId[];
   reviews: IReview[];
   faq: IFAQ[];
   variants: IVariant[];

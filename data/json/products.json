@@ -1,0 +1,1156 @@
+[
+  {
+    "_id": "690901b5f2ca4f4f6533337a",
+    "name": "Galaxy S24 Ultra",
+    "description": "Galaxy S24 Ultra — authentic phone with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332c9",
+    "brand": "690901b4f2ca4f4f653332e5",
+    "slug": "galaxy-s24-ultra-1",
+    "featured": true,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533334a"],
+    "offers": ["690901b4f2ca4f4f65333355"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-1-1-mhjj5ll9",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 146664,
+        "images": ["https://picsum.photos/seed/galaxy-s24-ultra-1-1/800/800"],
+        "inventory": {
+          "quantity_available": 126,
+          "quantity_reserved": 9,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.133Z",
+          "_id": "690901b5f2ca4f4f6533337c"
+        },
+        "_id": "690901b5f2ca4f4f6533337b"
+      },
+      {
+        "sku": "SKU-1-2-mhjj5ll9",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 146664,
+        "images": ["https://picsum.photos/seed/galaxy-s24-ultra-1-2/800/800"],
+        "inventory": {
+          "quantity_available": 33,
+          "quantity_reserved": 1,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.133Z",
+          "_id": "690901b5f2ca4f4f6533337e"
+        },
+        "_id": "690901b5f2ca4f4f6533337d"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.177Z",
+    "updatedAt": "2025-11-03T19:25:41.177Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533337f",
+    "name": "iPhone 15 Pro",
+    "description": "iPhone 15 Pro — authentic phone with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332c8",
+    "brand": "690901b4f2ca4f4f653332ee",
+    "slug": "iphone-15-pro-2",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333d"],
+    "offers": ["690901b4f2ca4f4f65333353"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-2-1-mhjj5ll9",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 87072,
+        "sale_price": 68307,
+        "images": ["https://picsum.photos/seed/iphone-15-pro-2-1/800/800"],
+        "inventory": {
+          "quantity_available": 84,
+          "quantity_reserved": 8,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.133Z",
+          "_id": "690901b5f2ca4f4f65333381"
+        },
+        "_id": "690901b5f2ca4f4f65333380"
+      },
+      {
+        "sku": "SKU-2-2-mhjj5ll9",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 87072,
+        "sale_price": 68307,
+        "images": ["https://picsum.photos/seed/iphone-15-pro-2-2/800/800"],
+        "inventory": {
+          "quantity_available": 116,
+          "quantity_reserved": 10,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.133Z",
+          "_id": "690901b5f2ca4f4f65333383"
+        },
+        "_id": "690901b5f2ca4f4f65333382"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.178Z",
+    "updatedAt": "2025-11-03T19:25:41.178Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f65333384",
+    "name": "Xiaomi 14 Pro",
+    "description": "Xiaomi 14 Pro — authentic phone with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d6",
+    "brand": "690901b4f2ca4f4f653332f4",
+    "slug": "xiaomi-14-pro-3",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333340"],
+    "offers": ["690901b4f2ca4f4f65333356"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-3-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 58932,
+        "sale_price": 55033,
+        "images": ["https://picsum.photos/seed/xiaomi-14-pro-3-1/800/800"],
+        "inventory": {
+          "quantity_available": 45,
+          "quantity_reserved": 9,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333386"
+        },
+        "_id": "690901b5f2ca4f4f65333385"
+      },
+      {
+        "sku": "SKU-3-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 58932,
+        "sale_price": 55033,
+        "images": ["https://picsum.photos/seed/xiaomi-14-pro-3-2/800/800"],
+        "inventory": {
+          "quantity_available": 40,
+          "quantity_reserved": 6,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333388"
+        },
+        "_id": "690901b5f2ca4f4f65333387"
+      },
+      {
+        "sku": "SKU-3-3-mhjj5lla",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 58932,
+        "sale_price": 55033,
+        "images": ["https://picsum.photos/seed/xiaomi-14-pro-3-3/800/800"],
+        "inventory": {
+          "quantity_available": 194,
+          "quantity_reserved": 7,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f6533338a"
+        },
+        "_id": "690901b5f2ca4f4f65333389"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.178Z",
+    "updatedAt": "2025-11-03T19:25:41.178Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533338b",
+    "name": "Dell XPS 15",
+    "description": "Dell XPS 15 — authentic laptop with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d2",
+    "brand": "690901b4f2ca4f4f653332f1",
+    "slug": "dell-xps-15-4",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333e"],
+    "offers": ["690901b4f2ca4f4f65333354"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-4-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 88653,
+        "sale_price": 78166,
+        "images": ["https://picsum.photos/seed/dell-xps-15-4-1/800/800"],
+        "inventory": {
+          "quantity_available": 45,
+          "quantity_reserved": 4,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f6533338d"
+        },
+        "_id": "690901b5f2ca4f4f6533338c"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533338e",
+    "name": "HP Spectre x360",
+    "description": "HP Spectre x360 — authentic laptop with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d5",
+    "brand": "690901b4f2ca4f4f653332ec",
+    "slug": "hp-spectre-x360-5",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333347"],
+    "offers": ["690901b4f2ca4f4f65333353"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-5-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 156068,
+        "images": ["https://picsum.photos/seed/hp-spectre-x360-5-1/800/800"],
+        "inventory": {
+          "quantity_available": 128,
+          "quantity_reserved": 10,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333390"
+        },
+        "_id": "690901b5f2ca4f4f6533338f"
+      },
+      {
+        "sku": "SKU-5-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 156068,
+        "images": ["https://picsum.photos/seed/hp-spectre-x360-5-2/800/800"],
+        "inventory": {
+          "quantity_available": 178,
+          "quantity_reserved": 6,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333392"
+        },
+        "_id": "690901b5f2ca4f4f65333391"
+      },
+      {
+        "sku": "SKU-5-3-mhjj5lla",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 156068,
+        "images": ["https://picsum.photos/seed/hp-spectre-x360-5-3/800/800"],
+        "inventory": {
+          "quantity_available": 31,
+          "quantity_reserved": 4,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333394"
+        },
+        "_id": "690901b5f2ca4f4f65333393"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f65333395",
+    "name": "Lenovo ThinkPad X1",
+    "description": "Lenovo ThinkPad X1 — authentic laptop with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332ce",
+    "brand": "690901b4f2ca4f4f653332eb",
+    "slug": "lenovo-thinkpad-x1-6",
+    "featured": true,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333e"],
+    "offers": ["690901b4f2ca4f4f65333353"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-6-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 78639,
+        "sale_price": 57557,
+        "images": ["https://picsum.photos/seed/lenovo-thinkpad-x1-6-1/800/800"],
+        "inventory": {
+          "quantity_available": 22,
+          "quantity_reserved": 3,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333397"
+        },
+        "_id": "690901b5f2ca4f4f65333396"
+      },
+      {
+        "sku": "SKU-6-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 78639,
+        "sale_price": 57557,
+        "images": ["https://picsum.photos/seed/lenovo-thinkpad-x1-6-2/800/800"],
+        "inventory": {
+          "quantity_available": 46,
+          "quantity_reserved": 1,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f65333399"
+        },
+        "_id": "690901b5f2ca4f4f65333398"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533339a",
+    "name": "Sony WH-1000XM5",
+    "description": "Sony WH-1000XM5 — authentic headphones with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d4",
+    "brand": "690901b4f2ca4f4f653332f3",
+    "slug": "sony-wh-1000xm5-7",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333a"],
+    "offers": ["690901b4f2ca4f4f65333358"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-7-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 45364,
+        "sale_price": 44454,
+        "images": ["https://picsum.photos/seed/sony-wh-1000xm5-7-1/800/800"],
+        "inventory": {
+          "quantity_available": 111,
+          "quantity_reserved": 6,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f6533339c"
+        },
+        "_id": "690901b5f2ca4f4f6533339b"
+      },
+      {
+        "sku": "SKU-7-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 45364,
+        "sale_price": 44454,
+        "images": ["https://picsum.photos/seed/sony-wh-1000xm5-7-2/800/800"],
+        "inventory": {
+          "quantity_available": 118,
+          "quantity_reserved": 10,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f6533339e"
+        },
+        "_id": "690901b5f2ca4f4f6533339d"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533339f",
+    "name": "Apple AirPods Pro 2",
+    "description": "Apple AirPods Pro 2 — authentic headphones with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d2",
+    "brand": "690901b4f2ca4f4f653332e9",
+    "slug": "apple-airpods-pro-2-8",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333345"],
+    "offers": ["690901b4f2ca4f4f65333356"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-8-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 23703,
+        "images": [
+          "https://picsum.photos/seed/apple-airpods-pro-2-8-1/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 122,
+          "quantity_reserved": 3,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333a1"
+        },
+        "_id": "690901b5f2ca4f4f653333a0"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333a2",
+    "name": "Bose QuietComfort",
+    "description": "Bose QuietComfort — authentic headphones with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d5",
+    "brand": "690901b4f2ca4f4f653332ec",
+    "slug": "bose-quietcomfort-9",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333345"],
+    "offers": ["690901b4f2ca4f4f65333360"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-9-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 25574,
+        "sale_price": 20810,
+        "images": ["https://picsum.photos/seed/bose-quietcomfort-9-1/800/800"],
+        "inventory": {
+          "quantity_available": 107,
+          "quantity_reserved": 3,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333a4"
+        },
+        "_id": "690901b5f2ca4f4f653333a3"
+      },
+      {
+        "sku": "SKU-9-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 25574,
+        "sale_price": 20810,
+        "images": ["https://picsum.photos/seed/bose-quietcomfort-9-2/800/800"],
+        "inventory": {
+          "quantity_available": 175,
+          "quantity_reserved": 9,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333a6"
+        },
+        "_id": "690901b5f2ca4f4f653333a5"
+      },
+      {
+        "sku": "SKU-9-3-mhjj5lla",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 25574,
+        "sale_price": 20810,
+        "images": ["https://picsum.photos/seed/bose-quietcomfort-9-3/800/800"],
+        "inventory": {
+          "quantity_available": 79,
+          "quantity_reserved": 7,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333a8"
+        },
+        "_id": "690901b5f2ca4f4f653333a7"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333a9",
+    "name": "Nike Air Max 270",
+    "description": "Nike Air Max 270 — authentic shoes with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d7",
+    "brand": "690901b4f2ca4f4f653332f1",
+    "slug": "nike-air-max-270-10",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333347"],
+    "offers": ["690901b4f2ca4f4f6533335c"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-10-1-mhjj5lla",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 182685,
+        "images": ["https://picsum.photos/seed/nike-air-max-270-10-1/800/800"],
+        "inventory": {
+          "quantity_available": 104,
+          "quantity_reserved": 7,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333ab"
+        },
+        "_id": "690901b5f2ca4f4f653333aa"
+      },
+      {
+        "sku": "SKU-10-2-mhjj5lla",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 182685,
+        "images": ["https://picsum.photos/seed/nike-air-max-270-10-2/800/800"],
+        "inventory": {
+          "quantity_available": 108,
+          "quantity_reserved": 5,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333ad"
+        },
+        "_id": "690901b5f2ca4f4f653333ac"
+      },
+      {
+        "sku": "SKU-10-3-mhjj5lla",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 182685,
+        "images": ["https://picsum.photos/seed/nike-air-max-270-10-3/800/800"],
+        "inventory": {
+          "quantity_available": 80,
+          "quantity_reserved": 3,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.134Z",
+          "_id": "690901b5f2ca4f4f653333af"
+        },
+        "_id": "690901b5f2ca4f4f653333ae"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333b0",
+    "name": "Adidas Ultraboost 22",
+    "description": "Adidas Ultraboost 22 — authentic shoes with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332cf",
+    "brand": "690901b4f2ca4f4f653332f1",
+    "slug": "adidas-ultraboost-22-11",
+    "featured": true,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333347"],
+    "offers": ["690901b4f2ca4f4f65333351"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-11-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 105290,
+        "sale_price": 76980,
+        "images": [
+          "https://picsum.photos/seed/adidas-ultraboost-22-11-1/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 54,
+          "quantity_reserved": 5,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333b2"
+        },
+        "_id": "690901b5f2ca4f4f653333b1"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.179Z",
+    "updatedAt": "2025-11-03T19:25:41.179Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333b3",
+    "name": "Puma RS-X",
+    "description": "Puma RS-X — authentic shoes with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d5",
+    "brand": "690901b4f2ca4f4f653332e9",
+    "slug": "puma-rs-x-12",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333340"],
+    "offers": ["690901b4f2ca4f4f65333352"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-12-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 95869,
+        "sale_price": 81480,
+        "images": ["https://picsum.photos/seed/puma-rs-x-12-1/800/800"],
+        "inventory": {
+          "quantity_available": 59,
+          "quantity_reserved": 0,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333b5"
+        },
+        "_id": "690901b5f2ca4f4f653333b4"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333b6",
+    "name": "Canon EOS R6",
+    "description": "Canon EOS R6 — authentic camera with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332ce",
+    "brand": "690901b4f2ca4f4f653332e9",
+    "slug": "canon-eos-r6-13",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333343"],
+    "offers": ["690901b4f2ca4f4f65333355"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-13-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 157663,
+        "images": ["https://picsum.photos/seed/canon-eos-r6-13-1/800/800"],
+        "inventory": {
+          "quantity_available": 44,
+          "quantity_reserved": 8,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333b8"
+        },
+        "_id": "690901b5f2ca4f4f653333b7"
+      },
+      {
+        "sku": "SKU-13-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 157663,
+        "images": ["https://picsum.photos/seed/canon-eos-r6-13-2/800/800"],
+        "inventory": {
+          "quantity_available": 82,
+          "quantity_reserved": 10,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333ba"
+        },
+        "_id": "690901b5f2ca4f4f653333b9"
+      },
+      {
+        "sku": "SKU-13-3-mhjj5llb",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 157663,
+        "images": ["https://picsum.photos/seed/canon-eos-r6-13-3/800/800"],
+        "inventory": {
+          "quantity_available": 36,
+          "quantity_reserved": 2,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333bc"
+        },
+        "_id": "690901b5f2ca4f4f653333bb"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333bd",
+    "name": "Nikon Z6 II",
+    "description": "Nikon Z6 II — authentic camera with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d6",
+    "brand": "690901b4f2ca4f4f653332e5",
+    "slug": "nikon-z6-ii-14",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333343"],
+    "offers": ["690901b4f2ca4f4f6533335c"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-14-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 122054,
+        "sale_price": 118649,
+        "images": ["https://picsum.photos/seed/nikon-z6-ii-14-1/800/800"],
+        "inventory": {
+          "quantity_available": 195,
+          "quantity_reserved": 6,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333bf"
+        },
+        "_id": "690901b5f2ca4f4f653333be"
+      },
+      {
+        "sku": "SKU-14-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 122054,
+        "sale_price": 118649,
+        "images": ["https://picsum.photos/seed/nikon-z6-ii-14-2/800/800"],
+        "inventory": {
+          "quantity_available": 97,
+          "quantity_reserved": 6,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333c1"
+        },
+        "_id": "690901b5f2ca4f4f653333c0"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333c2",
+    "name": "Philips Hue Starter Kit",
+    "description": "Philips Hue Starter Kit — authentic smart home with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d9",
+    "brand": "690901b4f2ca4f4f653332ee",
+    "slug": "philips-hue-starter-kit-15",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333f"],
+    "offers": ["690901b4f2ca4f4f65333355"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-15-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 8619,
+        "sale_price": 8177,
+        "images": [
+          "https://picsum.photos/seed/philips-hue-starter-kit-15-1/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 69,
+          "quantity_reserved": 4,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333c4"
+        },
+        "_id": "690901b5f2ca4f4f653333c3"
+      },
+      {
+        "sku": "SKU-15-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 8619,
+        "sale_price": 8177,
+        "images": [
+          "https://picsum.photos/seed/philips-hue-starter-kit-15-2/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 187,
+          "quantity_reserved": 6,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333c6"
+        },
+        "_id": "690901b5f2ca4f4f653333c5"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333c7",
+    "name": "LG 27\" 4K Monitor",
+    "description": "LG 27\" 4K Monitor — authentic monitor with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332cf",
+    "brand": "690901b4f2ca4f4f653332f2",
+    "slug": "lg-27-4k-monitor-16",
+    "featured": true,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333347"],
+    "offers": ["690901b4f2ca4f4f65333355"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-16-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 183143,
+        "sale_price": 183026,
+        "images": ["https://picsum.photos/seed/lg-27-4k-monitor-16-1/800/800"],
+        "inventory": {
+          "quantity_available": 123,
+          "quantity_reserved": 3,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333c9"
+        },
+        "_id": "690901b5f2ca4f4f653333c8"
+      },
+      {
+        "sku": "SKU-16-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 183143,
+        "sale_price": 183026,
+        "images": ["https://picsum.photos/seed/lg-27-4k-monitor-16-2/800/800"],
+        "inventory": {
+          "quantity_available": 66,
+          "quantity_reserved": 0,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333cb"
+        },
+        "_id": "690901b5f2ca4f4f653333ca"
+      },
+      {
+        "sku": "SKU-16-3-mhjj5llb",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 183143,
+        "sale_price": 183026,
+        "images": ["https://picsum.photos/seed/lg-27-4k-monitor-16-3/800/800"],
+        "inventory": {
+          "quantity_available": 124,
+          "quantity_reserved": 5,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333cd"
+        },
+        "_id": "690901b5f2ca4f4f653333cc"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333ce",
+    "name": "Asus ROG Strix Keyboard",
+    "description": "Asus ROG Strix Keyboard — authentic keyboard with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332ce",
+    "brand": "690901b4f2ca4f4f653332f1",
+    "slug": "asus-rog-strix-keyboard-17",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333342"],
+    "offers": ["690901b4f2ca4f4f65333352"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-17-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 172298,
+        "images": [
+          "https://picsum.photos/seed/asus-rog-strix-keyboard-17-1/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 60,
+          "quantity_reserved": 0,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333d0"
+        },
+        "_id": "690901b5f2ca4f4f653333cf"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333d1",
+    "name": "OnePlus Watch 2",
+    "description": "OnePlus Watch 2 — authentic watch with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d1",
+    "brand": "690901b4f2ca4f4f653332e4",
+    "slug": "oneplus-watch-2-18",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333c"],
+    "offers": ["690901b4f2ca4f4f6533334e"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-18-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 111581,
+        "sale_price": 91878,
+        "images": ["https://picsum.photos/seed/oneplus-watch-2-18-1/800/800"],
+        "inventory": {
+          "quantity_available": 41,
+          "quantity_reserved": 2,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333d3"
+        },
+        "_id": "690901b5f2ca4f4f653333d2"
+      },
+      {
+        "sku": "SKU-18-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 111581,
+        "sale_price": 91878,
+        "images": ["https://picsum.photos/seed/oneplus-watch-2-18-2/800/800"],
+        "inventory": {
+          "quantity_available": 38,
+          "quantity_reserved": 1,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333d5"
+        },
+        "_id": "690901b5f2ca4f4f653333d4"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333d6",
+    "name": "Huawei FreeBuds",
+    "description": "Huawei FreeBuds — authentic headphones with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332d8",
+    "brand": "690901b4f2ca4f4f653332ec",
+    "slug": "huawei-freebuds-19",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f6533333d"],
+    "offers": ["690901b4f2ca4f4f65333352"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-19-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 18384,
+        "sale_price": 14410,
+        "images": ["https://picsum.photos/seed/huawei-freebuds-19-1/800/800"],
+        "inventory": {
+          "quantity_available": 135,
+          "quantity_reserved": 3,
+          "quantity_damaged": 3,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333d8"
+        },
+        "_id": "690901b5f2ca4f4f653333d7"
+      },
+      {
+        "sku": "SKU-19-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 18384,
+        "sale_price": 14410,
+        "images": ["https://picsum.photos/seed/huawei-freebuds-19-2/800/800"],
+        "inventory": {
+          "quantity_available": 87,
+          "quantity_reserved": 3,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333da"
+        },
+        "_id": "690901b5f2ca4f4f653333d9"
+      },
+      {
+        "sku": "SKU-19-3-mhjj5llb",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 18384,
+        "sale_price": 14410,
+        "images": ["https://picsum.photos/seed/huawei-freebuds-19-3/800/800"],
+        "inventory": {
+          "quantity_available": 129,
+          "quantity_reserved": 4,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333dc"
+        },
+        "_id": "690901b5f2ca4f4f653333db"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653333dd",
+    "name": "Acer Predator Helios",
+    "description": "Acer Predator Helios — authentic laptop with warranty, fast delivery, and easy returns.",
+    "category": "690901b4f2ca4f4f653332c9",
+    "brand": "690901b4f2ca4f4f653332e2",
+    "slug": "acer-predator-helios-20",
+    "featured": false,
+    "is_active": true,
+    "campaigns": ["690901b4f2ca4f4f65333342"],
+    "offers": ["690901b4f2ca4f4f65333351"],
+    "reviews": [],
+    "faq": [],
+    "variants": [
+      {
+        "sku": "SKU-20-1-mhjj5llb",
+        "attributes": {
+          "color": "Black",
+          "size": "S"
+        },
+        "price": 23640,
+        "images": [
+          "https://picsum.photos/seed/acer-predator-helios-20-1/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 147,
+          "quantity_reserved": 2,
+          "quantity_damaged": 2,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333df"
+        },
+        "_id": "690901b5f2ca4f4f653333de"
+      },
+      {
+        "sku": "SKU-20-2-mhjj5llb",
+        "attributes": {
+          "color": "White",
+          "size": "M"
+        },
+        "price": 23640,
+        "images": [
+          "https://picsum.photos/seed/acer-predator-helios-20-2/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 142,
+          "quantity_reserved": 5,
+          "quantity_damaged": 1,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333e1"
+        },
+        "_id": "690901b5f2ca4f4f653333e0"
+      },
+      {
+        "sku": "SKU-20-3-mhjj5llb",
+        "attributes": {
+          "color": "Blue",
+          "size": "L"
+        },
+        "price": 23640,
+        "images": [
+          "https://picsum.photos/seed/acer-predator-helios-20-3/800/800"
+        ],
+        "inventory": {
+          "quantity_available": 54,
+          "quantity_reserved": 9,
+          "quantity_damaged": 0,
+          "last_updated": "2025-11-03T19:25:41.135Z",
+          "_id": "690901b5f2ca4f4f653333e3"
+        },
+        "_id": "690901b5f2ca4f4f653333e2"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.180Z",
+    "updatedAt": "2025-11-03T19:25:41.180Z"
+  }
+]

@@ -50,10 +50,13 @@ export class BrandService {
       query: { ...filter, fields, page, limit, sort },
     });
     const cached = await getCache<{
-      items: unknown[];
-      page: number;
-      limit: number;
-      totalPages: number;
+      brands: unknown[];
+      pagination: {
+        items: number;
+        page: number;
+        limit: number;
+        totalPages: number;
+      };
     }>(cacheKey);
     if (cached) return cached;
 
@@ -76,16 +79,19 @@ export class BrandService {
       brandQuery.select(selectFields);
     }
 
-    const [items, total] = await Promise.all([
+    const [brands, total] = await Promise.all([
       brandQuery.lean(),
       BrandModel.countDocuments(filter),
     ]);
 
     const payload = {
-      items,
-      page: Number(page),
-      limit: Number(limit),
-      totalPages: Math.ceil(total / Number(limit)),
+      brands,
+      pagination: {
+        items: total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages: Math.ceil(total / Number(limit)),
+      },
     };
     await setCache(cacheKey, payload);
     return payload;

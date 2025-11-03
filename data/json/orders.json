@@ -1,0 +1,832 @@
+[
+  {
+    "_id": "690901b5f2ca4f4f6533348f",
+    "id": 1,
+    "user_id": "690901b3f2ca4f4f653332bb",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333a9",
+        "quantity": 2,
+        "price": 90643,
+        "_id": "690901b5f2ca4f4f65333490"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f65333384",
+        "quantity": 2,
+        "price": 66648,
+        "_id": "690901b5f2ca4f4f65333491"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f65333384",
+        "quantity": 1,
+        "price": 44312,
+        "_id": "690901b5f2ca4f4f65333492"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533339f",
+        "quantity": 3,
+        "price": 48648,
+        "_id": "690901b5f2ca4f4f65333493"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333a9",
+        "quantity": 1,
+        "price": 43880,
+        "_id": "690901b5f2ca4f4f65333494"
+      }
+    ],
+    "total_amount": 548718,
+    "payment_method": "credit_card",
+    "order_status": "cancelled",
+    "transaction_id": "TXN-1762197941588-1",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "129 Example Street",
+      "phone": "+8801700000500",
+      "email": "buyer1@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1200",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.629Z",
+    "updatedAt": "2025-11-03T19:25:41.629Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f65333495",
+    "id": 2,
+    "user_id": "690901b3f2ca4f4f653332ba",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333a9",
+        "quantity": 3,
+        "price": 76048,
+        "_id": "690901b5f2ca4f4f65333496"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333bd",
+        "quantity": 1,
+        "price": 36746,
+        "_id": "690901b5f2ca4f4f65333497"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333bd",
+        "quantity": 3,
+        "price": 1100,
+        "_id": "690901b5f2ca4f4f65333498"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333c7",
+        "quantity": 1,
+        "price": 81649,
+        "_id": "690901b5f2ca4f4f65333499"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333c2",
+        "quantity": 1,
+        "price": 54423,
+        "_id": "690901b5f2ca4f4f6533349a"
+      }
+    ],
+    "total_amount": 404262,
+    "payment_method": "rocket",
+    "order_status": "returned",
+    "transaction_id": "TXN-1762197941588-2",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "763 Example Street",
+      "phone": "+8801700000501",
+      "email": "buyer2@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1201",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.629Z",
+    "updatedAt": "2025-11-03T19:25:41.629Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533349b",
+    "id": 3,
+    "user_id": "690901b3f2ca4f4f653332b4",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 1,
+        "price": 25410,
+        "_id": "690901b5f2ca4f4f6533349c"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533337a",
+        "quantity": 3,
+        "price": 11357,
+        "_id": "690901b5f2ca4f4f6533349d"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333d6",
+        "quantity": 3,
+        "price": 94271,
+        "_id": "690901b5f2ca4f4f6533349e"
+      }
+    ],
+    "total_amount": 342294,
+    "payment_method": "nagad",
+    "order_status": "cancelled",
+    "transaction_id": "TXN-1762197941588-3",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "496 Example Street",
+      "phone": "+8801700000502",
+      "email": "buyer3@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1202",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.630Z",
+    "updatedAt": "2025-11-03T19:25:41.630Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f6533349f",
+    "id": 4,
+    "user_id": "690901b3f2ca4f4f653332a6",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333ce",
+        "quantity": 1,
+        "price": 51085,
+        "_id": "690901b5f2ca4f4f653334a0"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333a2",
+        "quantity": 3,
+        "price": 49287,
+        "_id": "690901b5f2ca4f4f653334a1"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533339a",
+        "quantity": 3,
+        "price": 55438,
+        "_id": "690901b5f2ca4f4f653334a2"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333ce",
+        "quantity": 3,
+        "price": 86328,
+        "_id": "690901b5f2ca4f4f653334a3"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333bd",
+        "quantity": 1,
+        "price": 61660,
+        "_id": "690901b5f2ca4f4f653334a4"
+      }
+    ],
+    "total_amount": 685904,
+    "payment_method": "nagad",
+    "order_status": "delivered",
+    "transaction_id": "TXN-1762197941588-4",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "848 Example Street",
+      "phone": "+8801700000503",
+      "email": "buyer4@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1203",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.630Z",
+    "updatedAt": "2025-11-03T19:25:41.630Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334a5",
+    "id": 5,
+    "user_id": "690901b3f2ca4f4f653332b0",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333a9",
+        "quantity": 2,
+        "price": 39698,
+        "_id": "690901b5f2ca4f4f653334a6"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333bd",
+        "quantity": 1,
+        "price": 77935,
+        "_id": "690901b5f2ca4f4f653334a7"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333b3",
+        "quantity": 2,
+        "price": 52504,
+        "_id": "690901b5f2ca4f4f653334a8"
+      }
+    ],
+    "total_amount": 262339,
+    "payment_method": "debit_card",
+    "order_status": "processing",
+    "transaction_id": "TXN-1762197941588-5",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "131 Example Street",
+      "phone": "+8801700000504",
+      "email": "buyer5@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1204",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.630Z",
+    "updatedAt": "2025-11-03T19:25:41.630Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334a9",
+    "id": 6,
+    "user_id": "690901b3f2ca4f4f653332b9",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333d1",
+        "quantity": 2,
+        "price": 22659,
+        "_id": "690901b5f2ca4f4f653334aa"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533338b",
+        "quantity": 3,
+        "price": 92778,
+        "_id": "690901b5f2ca4f4f653334ab"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533337f",
+        "quantity": 3,
+        "price": 2675,
+        "_id": "690901b5f2ca4f4f653334ac"
+      }
+    ],
+    "total_amount": 331677,
+    "payment_method": "nagad",
+    "order_status": "delivered",
+    "transaction_id": "TXN-1762197941588-6",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "523 Example Street",
+      "phone": "+8801700000505",
+      "email": "buyer6@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1205",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.630Z",
+    "updatedAt": "2025-11-03T19:25:41.630Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334ad",
+    "id": 7,
+    "user_id": "690901b3f2ca4f4f653332a9",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333ce",
+        "quantity": 1,
+        "price": 41113,
+        "_id": "690901b5f2ca4f4f653334ae"
+      }
+    ],
+    "total_amount": 41113,
+    "payment_method": "debit_card",
+    "order_status": "delivered",
+    "transaction_id": "TXN-1762197941588-7",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "6 Example Street",
+      "phone": "+8801700000506",
+      "email": "buyer7@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1206",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.631Z",
+    "updatedAt": "2025-11-03T19:25:41.631Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334af",
+    "id": 8,
+    "user_id": "690901b3f2ca4f4f653332ba",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b3",
+        "quantity": 1,
+        "price": 40868,
+        "_id": "690901b5f2ca4f4f653334b0"
+      }
+    ],
+    "total_amount": 40868,
+    "payment_method": "bkash",
+    "order_status": "pending",
+    "transaction_id": "TXN-1762197941589-8",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "656 Example Street",
+      "phone": "+8801700000507",
+      "email": "buyer8@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1207",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.631Z",
+    "updatedAt": "2025-11-03T19:25:41.631Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334b1",
+    "id": 9,
+    "user_id": "690901b3f2ca4f4f653332aa",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 3,
+        "price": 97733,
+        "_id": "690901b5f2ca4f4f653334b2"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333b3",
+        "quantity": 3,
+        "price": 86420,
+        "_id": "690901b5f2ca4f4f653334b3"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533337f",
+        "quantity": 1,
+        "price": 62431,
+        "_id": "690901b5f2ca4f4f653334b4"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333d1",
+        "quantity": 3,
+        "price": 51831,
+        "_id": "690901b5f2ca4f4f653334b5"
+      }
+    ],
+    "total_amount": 770383,
+    "payment_method": "debit_card",
+    "order_status": "cancelled",
+    "transaction_id": "TXN-1762197941589-9",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "934 Example Street",
+      "phone": "+8801700000508",
+      "email": "buyer9@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1208",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.631Z",
+    "updatedAt": "2025-11-03T19:25:41.631Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334b6",
+    "id": 10,
+    "user_id": "690901b3f2ca4f4f653332a9",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f6533338b",
+        "quantity": 1,
+        "price": 70517,
+        "_id": "690901b5f2ca4f4f653334b7"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533338b",
+        "quantity": 1,
+        "price": 74761,
+        "_id": "690901b5f2ca4f4f653334b8"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333a9",
+        "quantity": 2,
+        "price": 30242,
+        "_id": "690901b5f2ca4f4f653334b9"
+      }
+    ],
+    "total_amount": 205762,
+    "payment_method": "bkash",
+    "order_status": "delivered",
+    "transaction_id": "TXN-1762197941589-10",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "201 Example Street",
+      "phone": "+8801700000509",
+      "email": "buyer10@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1209",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.631Z",
+    "updatedAt": "2025-11-03T19:25:41.631Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334ba",
+    "id": 11,
+    "user_id": "690901b3f2ca4f4f653332ba",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f6533339f",
+        "quantity": 1,
+        "price": 32637,
+        "_id": "690901b5f2ca4f4f653334bb"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333c2",
+        "quantity": 2,
+        "price": 15392,
+        "_id": "690901b5f2ca4f4f653334bc"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333d6",
+        "quantity": 3,
+        "price": 82332,
+        "_id": "690901b5f2ca4f4f653334bd"
+      }
+    ],
+    "total_amount": 310417,
+    "payment_method": "debit_card",
+    "order_status": "pending",
+    "transaction_id": "TXN-1762197941589-11",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "628 Example Street",
+      "phone": "+8801700000510",
+      "email": "buyer11@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1210",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.632Z",
+    "updatedAt": "2025-11-03T19:25:41.632Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334be",
+    "id": 12,
+    "user_id": "690901b3f2ca4f4f653332ad",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333dd",
+        "quantity": 1,
+        "price": 19717,
+        "_id": "690901b5f2ca4f4f653334bf"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333dd",
+        "quantity": 2,
+        "price": 97603,
+        "_id": "690901b5f2ca4f4f653334c0"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f6533337f",
+        "quantity": 2,
+        "price": 96090,
+        "_id": "690901b5f2ca4f4f653334c1"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333c2",
+        "quantity": 1,
+        "price": 94655,
+        "_id": "690901b5f2ca4f4f653334c2"
+      }
+    ],
+    "total_amount": 501758,
+    "payment_method": "cash_on_delivery",
+    "order_status": "cancelled",
+    "transaction_id": "TXN-1762197941589-12",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "661 Example Street",
+      "phone": "+8801700000511",
+      "email": "buyer12@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1211",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.632Z",
+    "updatedAt": "2025-11-03T19:25:41.632Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334c3",
+    "id": 13,
+    "user_id": "690901b3f2ca4f4f653332b8",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333c2",
+        "quantity": 3,
+        "price": 43105,
+        "_id": "690901b5f2ca4f4f653334c4"
+      }
+    ],
+    "total_amount": 129315,
+    "payment_method": "rocket",
+    "order_status": "delivered",
+    "transaction_id": "TXN-1762197941589-13",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "983 Example Street",
+      "phone": "+8801700000512",
+      "email": "buyer13@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1212",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.632Z",
+    "updatedAt": "2025-11-03T19:25:41.632Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334c5",
+    "id": 14,
+    "user_id": "690901b3f2ca4f4f653332af",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f6533337f",
+        "quantity": 3,
+        "price": 93408,
+        "_id": "690901b5f2ca4f4f653334c6"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333ce",
+        "quantity": 3,
+        "price": 67304,
+        "_id": "690901b5f2ca4f4f653334c7"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 1,
+        "price": 44878,
+        "_id": "690901b5f2ca4f4f653334c8"
+      }
+    ],
+    "total_amount": 527014,
+    "payment_method": "credit_card",
+    "order_status": "shipped",
+    "transaction_id": "TXN-1762197941589-14",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "674 Example Street",
+      "phone": "+8801700000513",
+      "email": "buyer14@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1213",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.632Z",
+    "updatedAt": "2025-11-03T19:25:41.632Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334c9",
+    "id": 15,
+    "user_id": "690901b3f2ca4f4f653332b1",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f6533338b",
+        "quantity": 3,
+        "price": 53965,
+        "_id": "690901b5f2ca4f4f653334ca"
+      }
+    ],
+    "total_amount": 161895,
+    "payment_method": "bkash",
+    "order_status": "cancelled",
+    "transaction_id": "TXN-1762197941589-15",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "559 Example Street",
+      "phone": "+8801700000514",
+      "email": "buyer15@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1214",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334cb",
+    "id": 16,
+    "user_id": "690901b3f2ca4f4f653332b7",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333dd",
+        "quantity": 1,
+        "price": 24797,
+        "_id": "690901b5f2ca4f4f653334cc"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 2,
+        "price": 8524,
+        "_id": "690901b5f2ca4f4f653334cd"
+      }
+    ],
+    "total_amount": 41845,
+    "payment_method": "debit_card",
+    "order_status": "pending",
+    "transaction_id": "TXN-1762197941589-16",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "743 Example Street",
+      "phone": "+8801700000515",
+      "email": "buyer16@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1215",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334ce",
+    "id": 17,
+    "user_id": "690901b3f2ca4f4f653332b2",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 1,
+        "price": 39994,
+        "_id": "690901b5f2ca4f4f653334cf"
+      }
+    ],
+    "total_amount": 39994,
+    "payment_method": "cash_on_delivery",
+    "order_status": "returned",
+    "transaction_id": "TXN-1762197941589-17",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "589 Example Street",
+      "phone": "+8801700000516",
+      "email": "buyer17@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1216",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334d0",
+    "id": 18,
+    "user_id": "690901b3f2ca4f4f653332b3",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b3",
+        "quantity": 2,
+        "price": 1051,
+        "_id": "690901b5f2ca4f4f653334d1"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333bd",
+        "quantity": 1,
+        "price": 96665,
+        "_id": "690901b5f2ca4f4f653334d2"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333a2",
+        "quantity": 2,
+        "price": 52563,
+        "_id": "690901b5f2ca4f4f653334d3"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333b3",
+        "quantity": 3,
+        "price": 29238,
+        "_id": "690901b5f2ca4f4f653334d4"
+      }
+    ],
+    "total_amount": 291607,
+    "payment_method": "rocket",
+    "order_status": "returned",
+    "transaction_id": "TXN-1762197941589-18",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "72 Example Street",
+      "phone": "+8801700000517",
+      "email": "buyer18@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1217",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334d5",
+    "id": 19,
+    "user_id": "690901b3f2ca4f4f653332ad",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333b0",
+        "quantity": 3,
+        "price": 97719,
+        "_id": "690901b5f2ca4f4f653334d6"
+      }
+    ],
+    "total_amount": 293157,
+    "payment_method": "cash_on_delivery",
+    "order_status": "processing",
+    "transaction_id": "TXN-1762197941589-19",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "3 Example Street",
+      "phone": "+8801700000518",
+      "email": "buyer19@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1218",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  },
+  {
+    "_id": "690901b5f2ca4f4f653334d7",
+    "id": 20,
+    "user_id": "690901b3f2ca4f4f653332ab",
+    "order_items": [
+      {
+        "product_id": "690901b5f2ca4f4f653333ce",
+        "quantity": 1,
+        "price": 30060,
+        "_id": "690901b5f2ca4f4f653334d8"
+      },
+      {
+        "product_id": "690901b5f2ca4f4f653333c7",
+        "quantity": 2,
+        "price": 37874,
+        "_id": "690901b5f2ca4f4f653334d9"
+      }
+    ],
+    "total_amount": 105808,
+    "payment_method": "credit_card",
+    "order_status": "shipped",
+    "transaction_id": "TXN-1762197941589-20",
+    "is_returned": false,
+    "is_active": true,
+    "shipping_address": {
+      "street": "168 Example Street",
+      "phone": "+8801700000519",
+      "email": "buyer20@example.com",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "zip_code": "1219",
+      "country": "Bangladesh"
+    },
+    "__v": 0,
+    "createdAt": "2025-11-03T19:25:41.633Z",
+    "updatedAt": "2025-11-03T19:25:41.633Z"
+  }
+]
