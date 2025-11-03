@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { promises as fs } from 'fs';
 import mongoose from 'mongoose';
 import path from 'path';
