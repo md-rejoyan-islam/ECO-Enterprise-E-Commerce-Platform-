@@ -55,7 +55,7 @@ const FAQSchema = new mongoose.Schema<IFAQ>({
   timestamp: { type: Date, default: Date.now },
 });
 
-const ProductSchema = new mongoose.Schema<IProduct>(
+const ProductSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -104,22 +104,32 @@ const ProductSchema = new mongoose.Schema<IProduct>(
         ref: 'Offer',
       },
     ],
-    reviews: [ReviewSchema],
-    faq: [FAQSchema],
-    variants: [VariantSchema],
+    reviews: {
+      type: [{ type: ReviewSchema }],
+      as: 'reviews',
+      default: [],
+    },
+    faq: {
+      type: [{ type: FAQSchema }],
+      as: 'faq',
+      default: [],
+    },
+    variants: {
+      type: [{ type: VariantSchema }],
+      as: 'variants',
+      default: [],
+    },
   },
   {
     timestamps: true,
   },
 );
 
-ProductSchema.index({ slug: 1 });
 ProductSchema.index({ name: 1 });
 ProductSchema.index({ category: 1 });
 ProductSchema.index({ brand: 1 });
 ProductSchema.index({ featured: 1 });
 ProductSchema.index({ is_active: 1 });
-ProductSchema.index({ 'variants.sku': 1 });
 
 const ProductModel = mongoose.model<IProduct>('Product', ProductSchema);
 

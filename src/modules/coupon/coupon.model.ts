@@ -62,7 +62,6 @@ const CouponSchema = new Schema<ICoupon>(
 );
 
 // Indexes for better query performance
-CouponSchema.index({ code: 1 }, { unique: true });
 CouponSchema.index({ is_active: 1 });
 CouponSchema.index({ expiration_date: 1 });
 CouponSchema.index({ discount_type: 1 });

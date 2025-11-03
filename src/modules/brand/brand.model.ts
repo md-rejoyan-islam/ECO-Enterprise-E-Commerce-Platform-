@@ -45,8 +45,6 @@ const BrandSchema = new mongoose.Schema<IBrand>(
   },
 );
 
-BrandSchema.index({ name: 1 });
-BrandSchema.index({ slug: 1 });
 BrandSchema.index({ is_active: 1 });
 BrandSchema.index({ featured: 1 });
 BrandSchema.index({ order: 1 });

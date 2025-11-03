@@ -153,10 +153,8 @@ const OrderSchema = new Schema<IOrder>(
 );
 
 // Indexes for better query performance
-OrderSchema.index({ id: 1 }, { unique: true });
 OrderSchema.index({ user_id: 1 });
 OrderSchema.index({ order_status: 1 });
-OrderSchema.index({ transaction_id: 1 }, { unique: true });
 OrderSchema.index({ tracking_number: 1 });
 OrderSchema.index({ is_active: 1 });
 OrderSchema.index({ createdAt: 1 });

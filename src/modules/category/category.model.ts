@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { ICategory } from './catgory.types';
 
-const CategorySchema = new mongoose.Schema<ICategory>(
+const CategorySchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -44,7 +44,6 @@ const CategorySchema = new mongoose.Schema<ICategory>(
   },
 );
 
-CategorySchema.index({ slug: 1 });
 CategorySchema.index({ is_active: 1 });
 CategorySchema.index({ featured: 1 });
 CategorySchema.index({ parent_id: 1 });

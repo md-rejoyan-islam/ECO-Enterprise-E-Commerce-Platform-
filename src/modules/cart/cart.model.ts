@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import { ICart, ICartItem } from './cart.types';
+import { ICart } from './cart.types';
 
-const CartItemSchema = new mongoose.Schema<ICartItem>(
+const CartItemSchema = new mongoose.Schema(
   {
     product: {
       type: mongoose.Schema.Types.ObjectId,
@@ -20,7 +20,7 @@ const CartItemSchema = new mongoose.Schema<ICartItem>(
   },
 );
 
-const CartSchema = new mongoose.Schema<ICart>(
+const CartSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -28,7 +28,10 @@ const CartSchema = new mongoose.Schema<ICart>(
       required: true,
       unique: true,
     },
-    items: [CartItemSchema],
+    items: {
+      type: [CartItemSchema],
+      default: [],
+    },
   },
   {
     timestamps: true,
@@ -36,7 +39,6 @@ const CartSchema = new mongoose.Schema<ICart>(
 );
 
 // Indexes
-CartSchema.index({ user: 1 });
 CartSchema.index({ 'items.product': 1 });
 
 const CartModel = mongoose.model<ICart>('Cart', CartSchema);

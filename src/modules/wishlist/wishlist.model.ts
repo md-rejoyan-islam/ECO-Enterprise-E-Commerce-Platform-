@@ -34,7 +34,6 @@ const WishlistSchema = new mongoose.Schema<IWishlist>(
 );
 
 // Indexes
-WishlistSchema.index({ user: 1 });
 WishlistSchema.index({ 'items.product': 1 });
 
 const WishlistModel = mongoose.model<IWishlist>('Wishlist', WishlistSchema);
